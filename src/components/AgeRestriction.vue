@@ -44,7 +44,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #age-restriction {
-  
+  max-width: 1920px;
   height: 100%;
   position: fixed;
   width: 100%;

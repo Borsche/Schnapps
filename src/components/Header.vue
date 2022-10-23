@@ -49,6 +49,7 @@ export default {
 .Header {
   height: 70px;
   width: 100%;
+  max-width: 1920px;
   position: fixed;
   background-color: transparent;
   z-index: 10;

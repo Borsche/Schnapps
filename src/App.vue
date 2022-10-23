@@ -1,5 +1,5 @@
 <template>
-  <div id="scrollContainer">
+  <div id="scrollContainer" class="content">
       <AgeRestriction/>
       <Header/>
       <FullSizeContent class="snap"/>
@@ -62,7 +62,13 @@ body {
   overflow: hidden;
 }
 
+#app {
+  margin: auto;
+  max-width: 1920px;
+}
+
 #scrollContainer {
+  max-width: 1920px;
   overflow-y: scroll;
   height: 100vh;
   scroll-snap-type: y mandatory;
@@ -77,8 +83,6 @@ body {
   scroll-snap-align: start;
 }
 
-div {
-}
 
 .restricted {
   flex: 1;
@@ -131,6 +135,7 @@ div {
 
 .fullpage_btn {
   width: 100%;
+  max-width: 1920px;
   position: absolute;
   background-color: transparent;
   margin-left: auto;
