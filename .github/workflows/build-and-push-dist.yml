@@ -17,6 +17,4 @@ jobs:
       
       - name: Push Dist
         run:
-          git fetch &&
-          git pull gh-pages &&
           git subtree push --prefix dist origin gh-pages
