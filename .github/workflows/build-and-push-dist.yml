@@ -1,0 +1,21 @@
+name: Build and Push Dist
+run-name: Building Page
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Install and build
+        run: npm run install
+        run: npm run build
+      
+      - name: Push Dist
+        run:
+          git subtree push --prefix dist origin gh-pages
