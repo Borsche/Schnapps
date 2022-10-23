@@ -73,6 +73,14 @@ body {
   height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#scrollContainer::-webkit-scrollbar {
+  display: none; /* Chrome */
 }
 
 #scrollContainer div {
